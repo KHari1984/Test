@@ -1,0 +1,37 @@
+*** Settings ***
+
+Documentation   Apps Test Suite
+Resource  Library.txt
+Library  DateTime
+Library  OperatingSystem
+
+*** Variables ***
+${select}   //*[@id="ctl00_ContentPlaceHolder1_uploader_radUploadListContainer"]
+
+*** Keywords ***
+I verify I can Upload certificate
+   click element  //*[@id="TBCFD9DD5008_Col01"]/div[2]/div/div/div/li[3]/a
+   click element  //*[@id="ctl00_ContentPlaceHolder1_Widget_MyCE_btnUploadCertificate"]
+   wait until page contains  My Certificates
+   click element  //*[@id="ctl00_ContentPlaceHolder1_startButton"]
+   wait until page contains   Step 2: Certificate Type
+   click element  //*[@id="ctl00_ContentPlaceHolder1_docTypeRadios_1"]
+   sleep  2s
+   click button  //*[@id="ctl00_ContentPlaceHolder1_wizardNav_NextButton"]
+   wait until page contains  ${select}
+   %{result}=  upload file  ${SORTED_XPRO_FILENAME}  ${SORTED_CDX_FILENAME}  ${Columns_to_be_compared}
+    should contain  ${result}  Pass
+   #double click element  ${select}
+   #Run  C:\\Users\\kchandrasekharan\\PycharmProjects\\Beta\\ResourcesFileUpload.exe
+   #choose file  //*[@id="ctl00_ContentPlaceHolder1_uploader_radUploadfile0"]  C:\\Users\\kchandrasekharan\\Pictures\\Test Screen\\Ts001.JPG
+  sleep  10s
+  click element  //*[@id="ctl00_ContentPlaceHolder1_uploader_btnUploadDocumentAsyncPanel"]
+  # wait until element is enabled  //*[@id="ctl00_ContentPlaceHolder1_wizardNav_SubmitButton"]
+  # click element  //*[@id="ctl00_ContentPlaceHolder1_wizardNav_SubmitButton"]
+  # wait until page contains  Your submission has been saved and a confirmation email has been sent.
+
+
+
+
+
+

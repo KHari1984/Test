@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20170905 07:38:32.253" generator="Robot 3.0.2 (Python 2.7.9 on win32)">
+<suite source="C:\Users\kchandrasekharan\PycharmProjects\Beta\tests\C1-Smoke.robot" id="s1" name="C1-Smoke">
+<test id="s1-t1" name="Asrt Smoke">
+<kw type="setup" name="Open Apps" library="Library">
+<arguments>
+<arg>${Env}</arg>
+</arguments>
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20170905 07:38:32.424" level="INFO">Opening browser 'gc' to base url 'https://apps.asrt.org/Default.aspx'</msg>
+<status status="PASS" endtime="20170905 07:38:36.648" starttime="20170905 07:38:32.424"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${Env}' == 'Beta'</arg>
+<arg>set suite variable</arg>
+<arg>${userIcon}</arg>
+<arg>//*[@id="TBCFD9DD5008_Col01"]/div[2]/div/div/div/li[2]/div/div[1]/a/em</arg>
+</arguments>
+<status status="PASS" endtime="20170905 07:38:36.649" starttime="20170905 07:38:36.648"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${Env}' == 'Live'</arg>
+<arg>set suite variable</arg>
+<arg>${userIcon}</arg>
+<arg>//*[@id="TBCFD9DD5008_Col01"]/div[2]/div/div/div/li[2]/div/div[1]/a/em</arg>
+</arguments>
+<kw name="Set Suite Variable" library="BuiltIn">
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<arguments>
+<arg>${userIcon}</arg>
+<arg>//*[@id="TBCFD9DD5008_Col01"]/div[2]/div/div/div/li[2]/div/div[1]/a/em</arg>
+</arguments>
+<msg timestamp="20170905 07:38:36.649" level="INFO">${userIcon} = //*[@id="TBCFD9DD5008_Col01"]/div[2]/div/div/div/li[2]/div/div[1]/a/em</msg>
+<status status="PASS" endtime="20170905 07:38:36.649" starttime="20170905 07:38:36.649"></status>
+</kw>
+<status status="PASS" endtime="20170905 07:38:36.649" starttime="20170905 07:38:36.649"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${Env}' == 'Beta'</arg>
+<arg>set suite variable</arg>
+<arg>${Logout}</arg>
+<arg>//*[@id="TBCFD9DD5008_Col01"]/div[2]/div/div/div/li[2]/div/div[2]/ul/li[6]/a</arg>
+</arguments>
+<status status="PASS" endtime="20170905 07:38:36.650" starttime="20170905 07:38:36.650"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${Env}' == 'Live'</arg>
+<arg>set suite variable</arg>
+<arg>${Logout}</arg>
+<arg>//*[@id="TBCFD9DD5008_Col01"]/div[2]/div/div/div/li[2]/div/div[2]/ul/li[6]/a</arg>
+</arguments>
+<kw name="Set Suite Variable" library="BuiltIn">
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<arguments>
+<arg>${Logout}</arg>
+<arg>//*[@id="TBCFD9DD5008_Col01"]/div[2]/div/div/div/li[2]/div/div[2]/ul/li[6]/a</arg>
+</arguments>
+<msg timestamp="20170905 07:38:36.651" level="INFO">${Logout} = //*[@id="TBCFD9DD5008_Col01"]/div[2]/div/div/div/li[2]/div/div[2]/ul/li[6]/a</msg>
+<status status="PASS" endtime="20170905 07:38:36.651" starttime="20170905 07:38:36.650"></status>
+</kw>
+<status status="PASS" endtime="20170905 07:38:36.651" starttime="20170905 07:38:36.650"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${Env}' == 'Live'</arg>
+<arg>set suite variable</arg>
+<arg>${GiveElement}</arg>
+<arg>//*[@id="ctl00_SlimHeader_SlimMenu_mobileMenu"]/li[11]/a</arg>
+</arguments>
+<kw name="Set Suite Variable" library="BuiltIn">
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<arguments>
+<arg>${GiveElement}</arg>
+<arg>//*[@id="ctl00_SlimHeader_SlimMenu_mobileMenu"]/li[11]/a</arg>
+</arguments>
+<msg timestamp="20170905 07:38:36.651" level="INFO">${GiveElement} = //*[@id="ctl00_SlimHeader_SlimMenu_mobileMenu"]/li[11]/a</msg>
+<status status="PASS" endtime="20170905 07:38:36.651" starttime="20170905 07:38:36.651"></status>
+</kw>
+<status status="PASS" endtime="20170905 07:38:36.652" starttime="20170905 07:38:36.651"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${Env}' == 'Beta'</arg>
+<arg>set suite variable</arg>
+<arg>${GiveElement}</arg>
+<arg>//*[@id="ctl00_SlimHeader_SlimMenu_mobileMenu"]/li[10]/a</arg>
+</arguments>
+<status status="PASS" endtime="20170905 07:38:36.652" starttime="20170905 07:38:36.652"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>Welcome to the ASRT!</arg>
+</arguments>
+<status status="PASS" endtime="20170905 07:38:36.668" starttime="20170905 07:38:36.652"></status>
+</kw>
+<status status="PASS" endtime="20170905 07:38:36.668" starttime="20170905 07:38:32.423"></status>
+</kw>
+<kw name="Given I have logged in Apps" library="Login">
+<doc>Sucessfull Login to Apps</doc>
+<arguments>
+<arg>${username}</arg>
+<arg>${password}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${LoginButton}</arg>
+</arguments>
+<status status="PASS" endtime="20170905 07:38:36.697" starttime="20170905 07:38:36.669"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${LoginButton}</arg>
+</arguments>
+<msg timestamp="20170905 07:38:36.698" level="INFO">Clicking element '//*[@id="ctl00_SlimHeader_actionButton"]'.</msg>
+<status status="PASS" endtime="20170905 07:38:37.081" starttime="20170905 07:38:36.697"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${UserName_Input}</arg>
+<arg>${username}</arg>
+</arguments>
+<msg timestamp="20170905 07:38:37.082" level="INFO">Typing text '188961' into text field '//*[@id="ctl00_ContentPlaceHolder1_ControlAlternateLogin_TextBoxLoginId"]'</msg>
+<status status="PASS" endtime="20170905 07:38:37.156" starttime="20170905 07:38:37.081"></status>
+</kw>
+<kw name="Input Password" library="Selenium2Library">
+<doc>Types the given password into text field identified by `locator`.</doc>
+<arguments>
+<arg>${password_input}</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20170905 07:38:37.156" level="INFO">Typing password into text field '//*[@id="ctl00_ContentPlaceHolder1_ControlAlternateLogin_TextBoxPassword"]'</msg>
+<status status="PASS" endtime="20170905 07:38:37.231" starttime="20170905 07:38:37.156"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>${login}</arg>
+</arguments>
+<msg timestamp="20170905 07:38:37.231" level="INFO">Clicking button '//*[@id="ctl00_ContentPlaceHolder1_ControlAlternateLogin_ButtonLogin"]'.</msg>
+<status status="PASS" endtime="20170905 07:38:37.313" starttime="20170905 07:38:37.231"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${MyAsrt}</arg>
+</arguments>
+<status status="PASS" endtime="20170905 07:38:37.816" starttime="20170905 07:38:37.314"></status>
+</kw>
+<status status="PASS" endtime="20170905 07:38:37.816" starttime="20170905 07:38:36.669"></status>
+</kw>
+<kw name="And I Click My ASRT" library="Login">
+<doc>Click ASRT Link</doc>
+<kw name="Click Link" library="Selenium2Library">
+<doc>Clicks a link identified by locator.</doc>
+<arguments>
+<arg>MyASRT</arg>
+</arguments>
+<msg timestamp="20170905 07:38:37.818" level="INFO">Clicking link 'MyASRT'.</msg>
+<status status="PASS" endtime="20170905 07:38:42.002" starttime="20170905 07:38:37.817"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>Resources</arg>
+</arguments>
+<status status="PASS" endtime="20170905 07:38:46.634" starttime="20170905 07:38:42.002"></status>
+</kw>
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>Connect</arg>
+</arguments>
+<msg timestamp="20170905 07:38:46.654" level="INFO">Current page contains text 'Connect'.</msg>
+<status status="PASS" endtime="20170905 07:38:46.654" starttime="20170905 07:38:46.634"></status>
+</kw>
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>Latest Discussions</arg>
+</arguments>
+<msg timestamp="20170905 07:38:46.672" level="INFO">Current page contains text 'Latest Discussions'.</msg>
+<status status="PASS" endtime="20170905 07:38:46.672" starttime="20170905 07:38:46.654"></status>
+</kw>
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>//*[@id="ctl00_ContentPlaceHolder1_subHeader_HyperLinkStore"]</arg>
+</arguments>
+<msg timestamp="20170905 07:38:46.687" level="INFO">Current page contains element '//*[@id="ctl00_ContentPlaceHolder1_subHeader_HyperLinkStore"]'.</msg>
+<status status="PASS" endtime="20170905 07:38:46.688" starttime="20170905 07:38:46.672"></status>
+</kw>
+<status status="PASS" endtime="20170905 07:38:46.688" starttime="20170905 07:38:37.817"></status>
+</kw>
+<kw name="And I verify Give Now" library="GiveNow">
+<doc>Verify Foundation Page Link</doc>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="aspnetForm"]/div[5]/div/div[1]/div/div[3]/div[2]/div/div[3]/div</arg>
+</arguments>
+<msg timestamp="20170905 07:38:46.689" level="INFO">Clicking element '//*[@id="aspnetForm"]/div[5]/div/div[1]/div/div[3]/div[2]/div/div[3]/div'.</msg>
+<status status="PASS" endtime="20170905 07:38:46.758" starttime="20170905 07:38:46.689"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${Giveelement}</arg>
+</arguments>
+<msg timestamp="20170905 07:38:46.759" level="INFO">Clicking element '//*[@id="ctl00_SlimHeader_SlimMenu_mobileMenu"]/li[11]/a'.</msg>
+<status status="PASS" endtime="20170905 07:38:49.899" starttime="20170905 07:38:46.758"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>Give Now</arg>
+</arguments>
+<status status="PASS" endtime="20170905 07:38:49.915" starttime="20170905 07:38:49.899"></status>
+</kw>
+<kw name="Go Back" library="Selenium2Library">
+<doc>Simulates the user clicking the "back" button on their browser.</doc>
+<status status="PASS" endtime="20170905 07:38:50.186" starttime="20170905 07:38:49.915"></status>
+</kw>
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>My ASRT</arg>
+</arguments>
+<msg timestamp="20170905 07:38:50.206" level="INFO">Current page contains text 'My ASRT'.</msg>
+<status status="PASS" endtime="20170905 07:38:50.206" starttime="20170905 07:38:50.186"></status>
+</kw>
+<status status="PASS" endtime="20170905 07:38:50.206" starttime="20170905 07:38:46.689"></status>
+</kw>
+<kw name="And I verify My CE Record" library="MyCERecord">
+<doc>Verify CE Record</doc>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${MyCERecord}</arg>
+</arguments>
+<msg timestamp="20170905 07:38:50.208" level="INFO">Clicking element '//*[@id="ctl00_ContentPlaceHolder1_Widget_MyCE_btnCERecord"]'.</msg>
+<status status="PASS" endtime="20170905 07:38:50.868" starttime="20170905 07:38:50.207"></status>
+</kw>
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>${uploadCertButton}</arg>
+</arguments>
+<msg timestamp="20170905 07:38:50.885" level="INFO">Current page contains element '//*[@id="ctl00_ContentPlaceHolder1_ButtonUploadCertificate"]'.</msg>
+<status status="PASS" endtime="20170905 07:38:50.885" starttime="20170905 07:38:50.868"></status>
+</kw>
+<kw name="Go Back" library="Selenium2Library">
+<doc>Simulates the user clicking the "back" button on their browser.</doc>
+<status status="PASS" endtime="20170905 07:38:51.274" starttime="20170905 07:38:50.885"></status>
+</kw>
+<status status="PASS" endtime="20170905 07:38:51.275" starttime="20170905 07:38:50.207"></status>
+</kw>
+<kw name="And I verify My Learning" library="MyLearning">
+<doc>I verify My Learning</doc>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="ctl00_ContentPlaceHolder1_Widget_MyCE_btnMyLearning"]</arg>
+</arguments>
+<msg timestamp="20170905 07:38:51.276" level="INFO">Clicking element '//*[@id="ctl00_ContentPlaceHolder1_Widget_MyCE_btnMyLearning"]'.</msg>
+<status status="PASS" endtime="20170905 07:39:36.521" starttime="20170905 07:38:51.276"></status>
+</kw>
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>My Learning</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20170905 07:39:36.530" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=60.0.3112.113)
+  (Driver info: chromedriver=2.31.488763 (092de99f48a300323ecf8c2a4e2e7cab51de5ba8),platform=Windows NT 10.0.14393 x86_64)
+</msg>
+<status status="FAIL" endtime="20170905 07:39:36.530" starttime="20170905 07:39:36.523"></status>
+</kw>
+<msg timestamp="20170905 07:39:36.530" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=60.0.3112.113)
+  (Driver info: chromedriver=2.31.488763 (092de99f48a300323ecf8c2a4e2e7cab51de5ba8),platform=Windows NT 10.0.14393 x86_64)
+</msg>
+<msg timestamp="20170905 07:39:36.532" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=60.0.3112.113)
+  (Driver info: chromedriver=2.31.488763 (092de99f48a300323ecf8c2a4e2e7cab51de5ba8),platform=Windows NT 10.0.14393 x86_64)
+</msg>
+<status status="FAIL" endtime="20170905 07:39:36.533" starttime="20170905 07:39:36.521"></status>
+</kw>
+<status status="FAIL" endtime="20170905 07:39:36.533" starttime="20170905 07:38:51.275"></status>
+</kw>
+<kw type="teardown" name="Close All Browsers" library="Selenium2Library">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" endtime="20170905 07:39:39.559" starttime="20170905 07:39:36.533"></status>
+</kw>
+<doc>This is a Basic Smoke test</doc>
+<tags>
+<tag>login</tag>
+<tag>Smoke</tag>
+</tags>
+<status status="FAIL" endtime="20170905 07:39:39.559" critical="yes" starttime="20170905 07:38:32.423">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=60.0.3112.113)
+  (Driver info: chromedriver=2.31.488763 (092de99f48a300323ecf8c2a4e2e7cab51de5ba8),platform=Windows NT 10.0.14393 x86_64)
+</status>
+</test>
+<doc>Apps Test Suite</doc>
+<status status="FAIL" endtime="20170905 07:39:39.562" starttime="20170905 07:38:32.255"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="0">Critical Tests</stat>
+<stat fail="1" pass="0">All Tests</stat>
+</total>
+<tag>
+<stat fail="1" pass="0">login</stat>
+<stat fail="1" pass="0">Smoke</stat>
+</tag>
+<suite>
+<stat fail="1" id="s1" name="C1-Smoke" pass="0">C1-Smoke</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20170905 07:38:32.420" level="WARN">Imported library 'C:\Users\kchandrasekharan\PycharmProjects\Beta\Resources\Asrt.py' contains no keywords.</msg>
+<msg timestamp="20170905 07:39:36.530" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=60.0.3112.113)
+  (Driver info: chromedriver=2.31.488763 (092de99f48a300323ecf8c2a4e2e7cab51de5ba8),platform=Windows NT 10.0.14393 x86_64)
+</msg>
+</errors>
+</robot>
